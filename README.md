@@ -22,3 +22,11 @@ Then create/switch to another branch from the original main:
 
 ## Deliverable
 Document in this README which version you selected and why.
+
+## Conflict Resolution
+
+A merge conflict occurred in `config.py` because both `feature-staging` and `feature-production` modified the same `ENVIRONMENT` configuration line.
+
+The `production` version was selected because the final configuration represents the production deployment target. The conflict was resolved manually by removing the Git conflict markers and keeping the production value.
+
+After resolving the conflict, `python3 config.py` and `./deploy.sh` were executed successfully.
